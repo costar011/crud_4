@@ -19,7 +19,7 @@
   background: none;
   padding: 0px 10px;
 
-  border-bottom: 4.5px solid #ffb3f0;
+  border-bottom: 4.5px solid #5ebdf7;
 }
 
 .search form input[type="submit"] {
@@ -40,7 +40,7 @@
 
 .search form input[type="submit"]:hover {
   border: none;
-  background-color: #489cdb;
+  background-color: #4b8ef2;
   color: #fff;
 }
 
@@ -61,7 +61,7 @@
 
 .booklist ul li {
   height: 100%;
-  background-color: #6fb4e8;
+  background-color: #4eabf2;
   color: #ffff;
 
   display: flex;
