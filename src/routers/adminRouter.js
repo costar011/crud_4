@@ -7,7 +7,7 @@ import {
   bookDetailController,
   bookCreateController,
   postAuthotCreateController,
-} from "../controller/adminController";
+} from "../controllers/adminController";
 
 const adminRouter = express.Router();
 

@@ -16,3 +16,5 @@ block content
             div.bookArea
                 button(onclick="bookDetailHandler(\"" + author._id + "\")") 돋보기
                 div(id=author._id).bookArea__box
+                    each b in author.books 
+                        p #{b.title}
