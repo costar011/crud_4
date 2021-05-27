@@ -20,7 +20,6 @@ const Author = new Schema(
       type: String,
       required: true,
     },
-
     books: [
       {
         type: mongoose.Schema.Types.ObjectId,
@@ -28,7 +27,8 @@ const Author = new Schema(
       },
     ],
   },
-  { versionKey: false }
+  {
+    versionKey: false,
+  }
 );
-
 export default mongoose.model(`Author`, Author, `Author`);

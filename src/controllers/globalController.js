@@ -6,6 +6,8 @@ export const homeController = async (req, res) => {
     query: { seq, searchValue },
   } = req;
 
+  console.log(seq);
+  console.log(searchValue);
   try {
     if (!seq && !searchValue) {
       const books = await Book.find().populate({
@@ -30,7 +32,6 @@ export const homeController = async (req, res) => {
             name: { $regex: `.*${searchValue}.*` },
           },
         });
-
         const nextBooks = books.filter((data) => data.author !== null);
 
         res.render("screens/home", { books: nextBooks });

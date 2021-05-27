@@ -10,19 +10,20 @@ const Book = new Schema(
     },
     location: {
       type: String,
-      required: true,
+      requreind: true,
     },
     price: {
       type: Number,
       required: true,
     },
-
     author: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: `Author`,
+      ref: `author`,
     },
   },
-  { versionKey: false }
+  {
+    versionKey: false,
+  }
 );
 
 export default mongoose.model(`Book`, Book, `Book`);

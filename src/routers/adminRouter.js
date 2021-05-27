@@ -1,25 +1,26 @@
 import express from "express";
 import {
-  authorViewController,
-  authorDetailController,
   authorCreateController,
-  bookViewController,
-  bookDetailController,
+  authorDetailController,
+  authorViewController,
   bookCreateController,
-  postAuthotCreateController,
+  bookDetailController,
+  bookViewController,
+  postCreateAuthorController,
 } from "../controllers/adminController";
 
 const adminRouter = express.Router();
 
-//author
+// author
 adminRouter.get("/authorManagement", authorViewController);
-adminRouter.get("/authorManagement:id", authorDetailController);
 adminRouter.get("/authorManagement/create", authorCreateController);
+adminRouter.get("/authorManagement/:id", authorDetailController);
 
-adminRouter.post("/postCreateAuthor", postAuthotCreateController);
-//book
+adminRouter.post("/postCreateAuthor", postCreateAuthorController);
+
+// book
 adminRouter.get("/bookManagement", bookViewController);
-adminRouter.get("/bookManagement:id", bookDetailController);
 adminRouter.get("/bookManagement/create", bookCreateController);
+adminRouter.get("/bookManagement/:id", bookDetailController);
 
 export default adminRouter;
