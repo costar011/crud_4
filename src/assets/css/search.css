@@ -16,7 +16,7 @@
   border: none;
   outline: none;
 
-  border: 1px solid skyblue;
+  border: 2px solid #348eed;
   border-radius: 5px;
   margin-right: 15px;
   padding: 0px 10px;
@@ -30,7 +30,7 @@
   background: none;
   padding: 0px 10px;
 
-  border-bottom: 4.5px solid pink;
+  border-bottom: 4.5px solid #5488f0;
 }
 
 .search form input[type="submit"] {
@@ -40,7 +40,7 @@
   background: none;
   cursor: pointer;
 
-  border: solid 3px skyblue;
+  border: solid 3px #4197d9;
   border-radius: 5px;
   width: 100px;
   height: 35px;
@@ -51,7 +51,7 @@
 
 .search form input[type="submit"]:hover {
   border: none;
-  background-color: skyblue;
+  background-color: #1487d9;
   color: #fff;
 }
 
