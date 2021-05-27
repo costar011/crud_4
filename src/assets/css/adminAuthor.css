@@ -103,7 +103,7 @@
 .start-fun {
   background-color: #fff !important;
   /* change color of button text when fun is started   */
-  color: salmon !important;
+  color: #5cb3ff !important;
 }
 
 /* pulsating effect on button */
